@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    border-bottom: 2px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #0047AB, #007BFF);
+    padding: 10px;
+    color: white;
+}
+
+/* Government and Police Sections */
+.gov, .police {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gov img, .police img {
+    width: 80px; /* Larger logo size for desktop */
+    height: auto;
+}
+.police img {
+    width: 120px;
+}
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 60px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* Form Container */
+.form-container {
+    width: 50%; /* Adjusted for desktop */
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    background: linear-gradient(to right, #0033cc, #0066ff);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 50px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+input[type="text"], input[type="date"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button */
+.btn-primary {
+    width: 50%; /* Adjusted for desktop */
+    margin: 10px auto;
+    text-align: center;
+    background: green;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: block;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #002299;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Hide महाराष्ट्र शासन, Government of Maharashtra, and Maharashtra Police Logo */
+    .gov p.marathi, .gov p.english, .police img, .gov img {
+        display: none;
+    }
+
+    .header {
+        flex-direction: column; /* Stack items vertically on mobile */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .banner {
+        font-size: 18px; /* Smaller font size for mobile */
+        margin-right: 0;
+    }
+
+    .form-container {
+        width: 90%; /* Full width on mobile */
+        padding: 15px;
+    }
+
+    .btn-primary {
+        width: 100%; /* Full width button on mobile */
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buldhana Police</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <!-- Government Logo and Text -->
+        <div class="gov">
+            <img src="images/gov_logo.png" alt="Government Logo">
+            <div>
+                <p class="marathi">महाराष्ट्र शासन</p>
+                <p class="english">Government of Maharashtra</p>
+            </div>
+        </div>
+
+        <!-- Police Banner -->
+        <div class="banner">
+            <p class="marathi">बुलढाणा पुलिस</p>
+            <p class="english">BULDHANA POLICE</p>
+        </div>
+
+        <!-- Police Logo -->
+        <div class="police">
+            <img src="images/police_logo.png" alt="Maharashtra Police Logo">
+        </div>
+    </div>
+
+    <!-- Form Title -->
+    <div class="text-center form-title">
+        <div class="prasthav">प्रस्ताव</div>
+    </div>
+    
+    <!-- Form Section -->
+    <section class="form-container">
+        <div class="container">
+            <form id="suggestionForm">
+                <label for="e-form">ई-फॉर्म:</label>
+                <input type="text" id="e-form" name="e-form" placeholder="ई-फॉर्म क्रमांक" required>
+
+                <label for="ps-name">पोलीस स्टेशनचे नाव:</label>
+                <input type="text" id="ps-name" name="ps-name" placeholder="पोलीस स्टेशनचे नाव" required>
+
+                <label for="crime-no">अपराध नं.:</label>
+                <input type="text" id="crime-no" name="crime-no" placeholder="अपराध नं" required>
+
+                <label for="section">कलम:</label>
+                <input type="text" id="section" name="section" placeholder="कलम" required>
+
+                <label for="accused-name">आरोपीचे नाव:</label>
+                <input type="text" id="accused-name" name="accused-name" placeholder="आरोपीचे नाव" required>
+
+                <label for="accused-address">आरोपीचा पत्ता:</label>
+                <input type="text" id="accused-address" name="accused-address" placeholder="आरोपीचा पत्त" required>
+
+                <label for="jail-release-date">जेल रिलीज दिनांक:</label>
+                <input type="date" id="jail-release-date" name="jail-release-date" placeholder="जेल रिलीज दिनांक" required>
+
+                <label for="incident-place">घटना स्थळ:</label>
+                <input type="text" id="incident-place" name="incident-place" placeholder="घटना स्थळ" required>
+
+                <label for="other-info">इतर माहिती:</label>
+                <input type="text" id="other-info" name="other-info" placeholder="इतर माहिती">
+
+                <label for="photo">फोटो:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+
+                <button type="submit" class="btn-primary">सबमिट करें</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
